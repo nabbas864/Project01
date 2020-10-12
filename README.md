@@ -1,3 +1,5 @@
+-project duration approximate 6 hours
+
 # Provision an EKS Cluster
 
 ```
@@ -116,3 +118,15 @@ kubectl -n redis get pods
 kubectl -n redis get pv
 kubectl -n redis logs sentinel-0
 ```
+
+## Deploy applications
+
+```
+kubectl apply -f Dockerfile-server
+kubectl apply -f Dockerfile-dashboard
+```
+
+# ELK Stack
+ELK stack can be deployed for monitoring which will take about one hour.
+
+
