@@ -1,3 +1,37 @@
+# Provision an EKS Cluster
+
+```
+$ aws configure
+AWS Access Key ID [None]: YOUR_AWS_ACCESS_KEY_ID
+AWS Secret Access Key [None]: YOUR_AWS_SECRET_ACCESS_KEY
+Default region name [None]: YOUR_AWS_REGION
+Default output format [None]: json
+```
+
+# Initialize Terraform workspace
+
+```
+terraform init
+```
+
+# View the plan before applying changes
+
+```
+terraform plan
+```
+
+# Deploy EKS cluster and Apply changes to the infrastructure
+
+```
+terraform apply
+```
+
+# Connect to EKS cluster
+
+```
+aws eks --region eu-west-2 update-kubeconfig --name [cluster name]
+```
+
 
 # Apply Kubernetes secrets
 
