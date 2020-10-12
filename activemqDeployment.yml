@@ -15,7 +15,7 @@ spec:
         app: active-mq
     spec:
       containers:
-        - image: [name-of-my-image-from-docker-hub]
+        - image: activemq
           name: active-mq
           imagePullPolicy: Always
           resources:
