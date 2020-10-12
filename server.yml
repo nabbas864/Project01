@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
   - name: server
-    image: nginx
+    image: golang:1.14.3-alpine3.11
